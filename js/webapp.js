@@ -31,11 +31,11 @@
 
         if (x < 0) { movimiento_x = 1; }
         if (x > 0) { movimiento_x = -1; }
-        if (x = 0) { movimiento_x = 0; }
+        if (x == 0) { movimiento_x = 0; }
         
         if (y < 0) { movimiento_y = -1; }
         if (y > 0) { movimiento_y = 1; }
-        if (y = 0) { movimiento_y = 0; }
+        if (y == 0) { movimiento_y = 0; }
     }
 
     //funcion que inicia todo
@@ -322,5 +322,5 @@
 
     window.addEventListener('load', init, false);
     window.addEventListener("deviceorientation", updatePosition, false);
-    window.screen.lockOrientation('landscape-primary');
+    //screen.lockOrientation('landscape-primary');
 })();
