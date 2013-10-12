@@ -1,5 +1,4 @@
 (function() {
-    console.log("Inicio");
     var canvas = null;
     var ctx = null;
     var movimiento_x = null; // que direccion se mueve el avion
@@ -27,10 +26,6 @@
     // obtiene el codigo de la tecla que se presiona
 
     function updatePosition(event) {
-
-        console.log("Movimiento");
-        console.log(event);
-
         var x = event.beta; // In degree in the range [-180,180]
         var y = event.gamma; // In degree in the range [-90,90]
 
@@ -326,7 +321,6 @@
     }
 
     window.addEventListener('load', init, false);
-    //document.addEventListener('keydown', movimiento, false);
     window.addEventListener("deviceorientation", updatePosition, false);
     window.screen.lockOrientation('landscape-primary');
 })();
