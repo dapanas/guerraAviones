@@ -1,0 +1,32 @@
+{
+  "version": "0.1",
+  "name": "avion",
+  "description": "avion game",
+  "launch_path": "index.html",
+  "icons": {
+    
+    "128": "/images/avion.png"
+    
+  },
+  "developer": {
+    "name": "Michael Toro",
+    "url": "http://michysoft.bugs3.com"
+  },
+  "installs_allowed_from": ["*"],
+  
+  "locales": {
+    "es": {
+      "description": "Juego de los aviones",
+      "developer": {
+        "url": "http://michysoft.bugs3.com"
+      }
+    },
+    "it": {
+      "description": "avion",
+      "developer": {
+        "url": "http://michysoft.bugs3.com"
+      }
+    }
+  },
+  "default_locale": "es"
+}
